@@ -1,2 +1,2 @@
-# hello-world
-helloworld
+# Python Blog
+Technical blog for python 
