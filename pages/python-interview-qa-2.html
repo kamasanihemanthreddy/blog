@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Hemanth Reddy K</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog">
+    <meta name="author" content="Hemanth Reddy K with help of Xiaoying Riley at 3rd Wave Media">
+    <link rel="shortcut icon" href="">
+    <!-- FontAwesome JS-->
+    <script defer src="../scripts/all.min.js"></script>
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="../scripts/theme-2.css">
+</head>
+
+<body>
+    <header class="header text-center">
+        <h1 class="blog-name pt-lg-4 mb-0"><a class="no-text-decoration" href="index.html">Hemanth Reddy K </a></h1>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navigation" class="collapse navbar-collapse flex-column">
+                <div class="profile-section pt-3 pt-lg-0">
+                    <div class="bio mb-2">I've always considered myself to be just average talent and
+                        what i've is ridiculous insane obessiveness for practice and preparation.</div>
+                    <ul class="social-list list-inline py-3 mx-auto">
+                        <li class="list-inline-item"><a target='_blank' href="https://in.linkedin.com/in/hemanthreddykamasani"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-github-alt fa-fw"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-stack-overflow fa-fw"></i></a></li>
+                    </ul>
+                    <!--//social-list-->
+                    <hr>
+                </div>
+                <!--//profile-section-->
+                <ul class="navbar-nav flex-column text-start">
+                    <li class="nav-item">
+                        <a class="nav-link " href="../index.html"><i class="fas fa-home fa-fw me-2"></i>Blog Home
+                        </a>
+                    </li>
+                    <!-- <li class="nav-item">
+            <a class="nav-link" href="../blog-post.html"><i class="fas fa-bookmark fa-fw me-2"></i>Blog
+              Post</a>
+          </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html"><i class="fas fa-user fa-fw me-2"></i>About Me<span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+                <div class="my-2 my-md-2">
+                    <a class="btn btn-primary" href="mailto:kk.hemanthreddy@gmail.com" target="_blank">Get in Touch</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="main-wrapper">
+        <section class="cta-section theme-bg-light py-5">
+            <div class="container text-center single-col-max-width">
+                <h2 class="heading">Python Interview Question and Answers</h2>
+                <div class="intro">Basic python interview Question and Answers</div>
+                <div class="single-form-max-width pt-3 mx-auto">
+                </div>
+            </div>
+        </section>
+        <section class="blog-list px-3 py-5 p-md-5">
+            <div class="row">
+                <div class=col-lg-12>
+                    <h4 class="text-center">Python Programming Q&A</h4>
+                    <div class="ml-30">
+                        <div class="row">
+                            <div class=col-lg-6>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Write a Python Program for Factorial using Lambda </h5>
+                                        <div class="card mt-3">
+                                            <div class="card-body">
+                                                <p class="card-text">Python Program for factorial using lambda, the best way to write is using <strong>reduce</strong> function from python functools module</p>
+                                                <code class="python">
+                                                    from functools import reduce
+                                                    n = 5
+                                                    result = reduce(lambda x,y:x*y,range(1,n+1))
+                                                    print(result)
+                                                    #output : 120
+                                                </code>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=col-lg-6>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Write a Python Program to not allow immediate repeation in a given list consisting integers.</h5>
+                                        <div class="card mt-3">
+                                            <div class="card-body">
+                                                <p class="card-text">#input = [1,1,2,2,2,3,3,5,3] | #output = [1,2,3,5,3]</p>
+                                                <code class="python">
+                                                    duplicate = 0
+                                                    final_list = []
+                                                    length = len(input)
+                                                    for val in range(length):
+                                                    <span>if duplicate == input[val]:</span>
+                                                    <span><span>duplicate = input[val]</span></span>
+                                                    <span>else:</span>
+                                                    <span><span>final_list.append(input[val])</span></span>
+                                                    <span><span>duplicate = input[val]</span></span>
+                                                    print(final_list) #[1,2,3,5,3]
+                                                </code>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class=col-lg-6>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Write a Python Program to find min, max, median, mean? </h5>
+                                        <div class="card mt-3">
+                                            <div class="card-body">
+                                                <p class="card-text">#input = [2, 45,65,32,98,43]</p>
+                                                <code class="python">
+                                                    ####### min #######
+                                                    print(min(input)) #min value in list i.e 2
+                                                    ####### max #######
+                                                    print(max(input)) #max value in list i.e 98
+                                                    ######## median #######
+                                                    inp_l = sorted(input) #sort the input
+                                                    length = len(inp_l)
+                                                    if length %2 == 0: #checking reminder 0 or not
+                                                    <span>m1 = inp_l[length//2]</span> #finding middle of list
+                                                    <span>m2 = inp_l[length//2 - 1]</span> #finding next element in the middle
+                                                    <span>median = (m1+m2)/2</span> #average of the middles
+                                                    else:
+                                                    <span>median = inp_l[length/2]</span> #middle of list
+                                                    print(median) # output 37.5
+                                                    ####### mean #######
+                                                    val = sum(input) #sum of list
+                                                    mean = val/length(input) #average of list
+                                                    print(mean) #output: 47
+                                                </code>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=col-lg-6>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Write a Python Program to sort the given list without inbuild liberary </h5>
+                                        <div class="card mt-3">
+                                            <div class="card-body">
+                                                <p class="card-text">#input : [2, 45, 65, 32, 98, 43] | #output: [2, 32, 43, 45, 65, 98]</p>
+                                                <code class="python">
+                                                    for i in range(len(input)):
+                                                    <span>for j in range(0,len(input)-i-1):</span>
+                                                    <span><span>if input[j] > input[j+1]</span></span>
+                                                    <span><span><span>input[j], input[j+1] = input[j+1], input[j]</span></span></span>
+                                                    print(input) #ouput [2, 32, 43, 45, 65, 98]
+                                                </code>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav class="blog-nav nav nav-justified my-5">
+                    <a class="nav-link-prev nav-item nav-link rounded-left" href="../pages/python-interview-qa-1.html">Previous <i class="arrow-prev fas fa-long-arrow-alt-left"></i></a>
+                    <!-- <a class="nav-link-next nav-item nav-link rounded-right" href="../pages/python-interview-qa-2.html">Next<i class="arrow-next fas fa-long-arrow-alt-right"></i></a> -->
+                </nav>
+            </div>
+    </div>
+    </section>
+    <footer class="footer text-center py-2 theme-bg-dark">
+        <small class="copyright">Made with <span class="sr-only">love</span><i class="fas fa-heart" style="color: #fb866a;"></i> in Making</small>
+    </footer>
+    </div>
+    <!--//main-wrapper-->
+    <!-- Javascript -->
+    <script src="../scripts/popper.min.js"></script>
+    <script src="../scripts/bootstrap.min.js"></script>
+</body>
+
+</html>

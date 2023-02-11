@@ -25,3 +25,28 @@ code p {
     padding:30px;
     margin:5px;
 }
+code.python{
+ display: block;
+  font-family: Consolas, monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #f8f8f8;
+  background-color: #2b2b2b;
+  padding: 10px;
+  margin: 0 0 10px;
+  border-radius: 5px;
+}
+
+
+code span {
+  display: inline-block;
+  margin-left: 20px;
+}
+code span span {
+  display: inline-block;
+  margin-left: 20px;
+}
+code span span span {
+  display: inline-block;
+  margin-left: 20px;
+}
